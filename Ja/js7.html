@@ -1,0 +1,53 @@
+<!DOCTYPe html>
+<html lang="en">
+<head>
+    <meta charset= "UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAVA SCRIPT </title>
+    
+    
+</head>
+<body>
+    <div id = "mainDivID" class="mainDivClass">
+        <h1 id = "heading"> Events and Handlers</h1>
+        <p id = "para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+            Eum explicabo beatae asperiores veritatis totam autem molestiae iusto culpa.
+            Tempora nisi nostrum vel corporis soluta temporibus maiores non? Expedita, explicabo est!</p>
+            <p id="time">This text will change to time</p>
+            <p> the current date time is : <span id="timespan">change this text</span></p>
+
+        <input id = "btn" type="button" value="submit"> 
+    </div>
+     
+    <script>
+        // function greet(){
+        //     console.log("Rishita Chauhan");
+        
+        // }
+        // let setTimeout=(greet,5000);//calling the function once after given the time
+        // time
+        // // clearTimeout(timeout)
+        // let interval = setInterval(greet,36000);
+        // // clearInterval(interval)
+        // function display(){
+        //     let abc = new Date();
+        //     console.log(abc);
+
+        // }
+        //    display()
+        function display(){
+            let timeDate = new Date();
+            console.log(timeDate);
+            document.getElementById("timespan").innerHTML=timeDate
+        }
+        setInterval(display,1000);
+
+    </script>
+
+
+
+</body>
+
+
+</html>
